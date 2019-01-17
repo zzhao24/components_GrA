@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title ="component"></title>
+    <meta charset="UTF-8">
+    <link rel:"stylesheet" type="text/css href="css/main.css>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <main>
+
+    <div id="app">
+        <activeusers name="Zhao" role="i confuse people">
+            <h4>Active User Data:</h4>
+        </activeusers>
+
+        <activeusers name="zhi" role="i love people">
+                <h4>Active User Data:</h4>
+            </activeusers>
+        </div>
+    </main>
+    
+     <!-- component template-->   
+     <template id="userstemplate">  
+     <div>
+            <slot></slot>
+            <p>{{ name}}</p>
+            <p>{{role}}</p>
+            <hr>
+        </div>
+</template>
+<script src="js/main.js"></script>
+</body>
+</html>
